@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+             background-color: blue;
+            font-size: 100px;
+            text-align: center;
+            display: inline-block;
+            margin: 5px;
+        }
+        #box2{
+            /* position: relative;
+            top: 100px;
+            left: 200px;
+            background-color: red; */
+            position: absolute;
+            /* top: 0; */
+            right: 10px;
+            bottom: 0px;
+            background-color: chartreuse;
+
+        }
+        .container{
+            height: 70vh;
+            width: 50%;
+            background-color: rosybrown;
+            margin:auto ;
+            position: relative;
+
+            #box1{
+                position: absolute;
+                /* right: 0px; */
+                left: auto;
+                bottom: 0px;
+            }
+        }
+        p{
+            font-size: 50px;
+            padding: 50px;
+        }
+        #box3{
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            
+        }
+        
+        </style>
+</head>
+<body>
+    <!--
+    5 types of positions
+    1 static -by default position
+    2 relative
+    3 absolute
+    4 fixed
+    5 stickey -->
+
+    <!-- <span>This is my span tag</span>
+
+    <div>This is my div tag</div> -->
+
+    <div class="box">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box">4</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde beatae voluptatibus ab sequi architecto quia tenetur amet minima libero enim inventore deserunt recusandae, neque laudantium vitae nobis omnis esse, magni dolor repellendus placeat corrupti incidunt non! Exercitationem, saepe? Temporibus, quo delectus? Ratione saepe iure itaque ullam. Deleniti eaque sequi quisquam non. At soluta illo aperiam, excepturi, quae porro possimus blanditiis vel laboriosam voluptatum ipsum nam pariatur quibusdam voluptas eum qui nobis commodi. Temporibus, doloremque facilis fuga eum qui quo placeat minima quasi, laboriosam doloribus non minus odio ut id porro est consequuntur neque ducimus libero facere obcaecati rem ullam!</p>
+
+    <!-- <div class="container">
+        <div class="box" id="box1"></div>
+    </div> -->
+</body>
+</html>
