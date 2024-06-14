@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+
+        background-color: pink;
+      }
+
+      .container {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        animation-name: box;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+          animation-timing-function: ease-in; 
+        /* animation-timing-function: ease-out;
+        animation-timing-function: ease-in-out; */
+        /* animation-timing-function: linear;   */
+        animation-delay: 2s;
+        position: relative;
+      }
+
+      @keyframes box {
+        
+        0%{
+
+           left: 0px;
+           top: 0px;
+           background-color: red;
+        }
+        10%{
+
+          left: 200px;
+          top: 0px;
+          background-color: black;
+
+        }
+        20%{
+
+          left: 200px;
+          top: 200px;
+          background-color: green;
+
+        }
+        30%{
+
+          top: 200px;
+          left: 400px;
+          background-color: yellow;
+
+        }
+        40%{
+
+          top: 400px;
+          left: 400px;
+          background-color: brown;
+
+        }
+        50%{
+            top: 400px;
+            left: 600px;
+            background-color: beige;
+        }
+        60%{
+            top: 600px;
+          left: 600px;
+          background-color: slategrey;
+        }
+        70%{
+            top: 600px;
+          left: 800px;
+          background-color: fuchsia;
+        }
+        80%{
+            top: 800px;
+          left: 800px;
+          background-color: honeydew;
+        }
+         90%{
+            top: 800px;
+          left: 1000px;
+          background-color: sienna;
+        }
+         100%{
+            top: 1000px;
+          left: 1000px;
+          background-color: teal;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
