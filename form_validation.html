@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validator</title>
+  </head>
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #161a1d;
+  --primary-color: #7289da;
+  --gray-color: #4f4f4f;
+}
+body {
+  background-color: var(--main-color);
+}
+/* Form */
+form {
+  border: 2px solid rgba(255, 255, 255, 0.224);
+  border-radius: 5px;
+  width: 30%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1.2;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+form input {
+  padding: 6px;
+  width: 230px;
+  outline: none;
+}
+input[type="submit"] {
+  width: 230px;
+  background: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.already {
+  margin-top: 20px;
+}
+form p {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+.input-container p.msg {
+  visibility: hidden;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.input-container.error p.msg {
+  visibility: visible;
+}
+img {
+  width: 51%;
+  position: absolute;
+  top: 60px;
+  right: 10%;
+}
+.content h1 {
+  position: absolute;
+  top: 45%;
+  right: 38%;
+  font-size: 5rem;
+  color: #fff;
+}
+.input-container.error input {
+  border-color: red;
+}
+.input-container.success input {
+  border-color: rgb(97, 249, 97);
+}
+  </style>
+  <body>
+    <!-- Form -->
+    <section class="container">
+      <form>
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="Name*"
+            class="username"
+            id="username"
+          />
+          <p class="user-msg msg">error message</p>
+        </div>
+        <div class="input-container">
+          <input
+            type="email"
+            placeholder="Email Address*"
+            class="email"
+            id="email"
+          />
+          <p class="email-msg msg">error message</p>
+        </div>
+        <div class="input-container">
+          <input
+            type="password"
+            placeholder="Password*"
+            class="password1"
+            id="password1"
+          />
+          <p class="password1-msg msg">error message</p>
+        </div>
+        <div class="input-container">
+          <input
+            type="password"
+            placeholder="Confirm Password*"
+            id="password2"
+            class="password2"
+          />
+          <p class="password2-msg msg">error message</p>
+        </div>
+        <input type="submit" value="Submit" class="submit" />
+        <p class="already">Already have an account? <a href="#">Login</a></p>
+      </form>
+      <!-- Image / Content -->
+      <div class="content">
+        <img
+          src="https://noblewoodgardenstore.ie/wp-content/uploads/2021/12/malvestida-magazine-DMl5gG0yWWY-unsplash-edited.jpg"
+        />
+        <h1>
+          Shoe <br />
+          Palace
+        </h1>
+      </div>
+    </section>
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
